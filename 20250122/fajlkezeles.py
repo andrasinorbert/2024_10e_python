@@ -1,13 +1,12 @@
 from adatsor import *
 
-def beolvas(filename):
+def beolvas(filename:str):
     f=open(filename, encoding="utf-8")
     sorok=f.readlines()
     f.close()
     return sorok
 
 def feldolgozo(sorok:list[str]):
-    #adatok=[]
     adatok=AdatsorLista()
     for i in range(len(sorok)):
         sor=sorok[i].strip()
